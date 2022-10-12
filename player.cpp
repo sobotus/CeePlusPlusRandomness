@@ -57,4 +57,5 @@ void Player::setCharisma(int charisma)
 
 void Player::displayCharacterInformation()
 {
+    // display code goes here
 }

@@ -41,5 +41,9 @@ public:
     void setWisdom(int);
     void setCharisma(int);
     // Display Information
+    //
+    // This void method will display:
+    // The characters name, health, mana
+    // plus all stats attributed to said character.
     void displayCharacterInformation();
 };
