@@ -81,6 +81,12 @@ void Player::useMana(double mana)
 {
     this->mana -= mana;
 }
+
+void Player::rollAttributes()
+{
+    // Roll random numbers between ATTRIBUTEPOINTS and 0,
+    // Assign random amount of points / 6
+}
 //
 // Display character information
 //
