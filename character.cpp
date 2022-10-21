@@ -4,6 +4,11 @@ Character::Character()
 {
     this->hitpoints = 100 + this->constitution / 5.5;
     this->mana = 100;
+    this->attributePoints = 27;
+}
+
+Character::~Character()
+{
 }
 
 // Set character name to parameter of method.

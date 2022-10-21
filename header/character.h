@@ -1,3 +1,4 @@
+#pragma once
 #include <iostream>
 
 class Character
@@ -17,6 +18,7 @@ private:
     int wisdom;
     int charisma;
 
+public:
     // Constructor
     Character();
 
