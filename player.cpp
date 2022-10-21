@@ -21,6 +21,23 @@ void Player::setCharacterName(std::string name)
     this->characterName = name;
 }
 
+std::string Player::getCharacterName()
+{
+    return this->characterName;
+}
+
+int Player::getAttributePoints()
+{
+    return this->attributePoints;
+}
+
+int Player::getCharisma() { return this->charisma; }
+int Player::getConstitution() { return this->constitution; }
+int Player::getStrength() { return this->strength; }
+int Player::getIntelligence() { return this->intelligence; }
+int Player::getDexterity() { return this->dexterity; }
+int Player::getWisdom() { return this->wisdom; }
+
 //
 // Set Attributes
 // Strength, Constitution, Dexterity, Intelligence, Wisdom and Charisma
@@ -51,6 +68,19 @@ void Player::setCharisma(int charisma)
     this->charisma = charisma;
 }
 
+void Player::addAttributePoints(int points)
+{
+    this->attributePoints += points;
+}
+
+void Player::takeDamage(double damage)
+{
+    this->hitpoints -= damage;
+}
+void Player::useMana(double mana)
+{
+    this->mana -= mana;
+}
 //
 // Display character information
 //
