@@ -5,10 +5,11 @@ class Player
 
 private:
     std::string characterName;
-    double hitpoints;
-    double mana;
+    float hitpoints;
+    float mana;
 
     // Attributes
+    int attributePoints;
     int strength;
     int constitution;
     int dexterity;
@@ -31,6 +32,8 @@ public:
     int getIntelligence();
     int getWisdom();
     int getCharisma();
+    int getAttributePoints();
+    std::string getCharacterName();
     // Set character name
     void setCharacterName(std::string);
     // Set attributes
@@ -40,6 +43,11 @@ public:
     void setIntelligence(int);
     void setWisdom(int);
     void setCharisma(int);
+
+    void addAttributePoints(int);
+    void takeDamage(double);
+    void useMana(double);
+    void rollAttributes();
     // Display Information
     //
     // This void method will display:
