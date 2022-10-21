@@ -1,1 +1,4 @@
 output
+*.out
+.vscode
+.DS_Store
